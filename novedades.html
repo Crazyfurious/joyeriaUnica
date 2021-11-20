@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
     <!-- Sección de links para CSS, fuentes y otros -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/estilos.css" />
     <link rel="shortcut icon" href="/images/web/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,38 +21,219 @@
   <body>
     <!-- Encabezado. Aquí situaré el logo, el menú de navegación y los botones de la cesta e identificarte -->  
     <header>
-      <div class="encabezado contenedor encabezado--Background ">
-        <div class="encabezado__logo">
-          <a href="/"><img src="/images/header/logo.svg" alt="Logo" class="encabezado__imagenes" /></a>
-        </div>      
-        <!-- El menú de navegación -->  
-        <nav class="nav">
-          <ul class="nav__lista">         
-            <li class="nav__elementos">
-              <a href="/"><img src="images/nav/1%20Home.png" alt="" />Inicio</a>
-            </li>
-            <li class="nav__elementos">
-              <a href="tienda.html"><img src="images/nav/2%20Store.png" alt="" />Tienda</a>
-            </li>
-            <li class="nav__elementos">
-              <a href="novedades.html"><img src="images/nav/3%20Novedades.png" alt="" />Novedades</a>
-            </li>
-            <li class="nav__elementos">
-              <a href="servicios.html"><img src="images/nav/4%20servicios.png" alt="" />Servicios</a>
-            </li>
-            <li class="nav__elementos">
-              <a href="contacto.html"><img src="images/nav/5%20Contacto.png" alt="" />Contacto</a>
-            </li>
-          </ul>
+      <div>
+        <!-- El menú de navegación -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/images/header/logo.svg" alt="Logo" class="encabezado__imagenes"/></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html"><img src="images/nav/1%20Home.png" alt="" width="18px" height="18px" /> Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tienda.html"><img src="images/nav/2%20Store.png" alt="" width="18px" height="18px" /> Tienda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="novedades.html"><img src="images/nav/3%20Novedades.png" alt="" width="18px" height="18px" /> Novedades</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Más secciones
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="servicios.html"><img src="images/nav/4%20servicios.png" alt="" width="18px" height="18px" /> Servicios</a></li>
+                    <li><a class="dropdown-item" href="contacto.html"><img src="images/nav/5%20Contacto.png" alt="" width="18px" height="18px" /> Contacto</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#"><img src="/images/header/cesta.svg" alt="Cesta" width="18px" height="18px" /> Cesta
+                      <span class="position-absolute top-82 start-5 translate-left badge rounded-pill bg-danger">2
+                    </span></a></li>
+                    <li><a class="dropdown-item" href="#"><img src="/images/header/identificarme.svg" alt="Identificarme" width="18px" height="18px" /> Identificarme</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+              <button type="button" class="btn btn-primary me-5" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"> Envíanos tus consultas</button>
+
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Escribe tu consulta</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="recipient-name" class="col-form-label">Destinatario:</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                          <label for="message-text" class="col-form-label">Mensaje:</label>
+                          <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary">Enviar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscador</button>
+              </form>
+            </div>
+          </div>
         </nav>
-        <!-- Los iconos de cesta y usuario -->
-        <div class="encabezado__cesta">
-          <img src="/images/header/cesta.svg" alt="Cesta" class="encabezado__imagenes" />
-        </div>
-        <div class="encabezado__usuario">
-          <img src="/images/header/identificarme.svg" alt="Identificarme" class="encabezado__imagenes" />
-        </div>
       </div> <!-- FIN DEL CONTENDOR DEL ENCABEZADO -->
     </header>
+    <!-- COMIENZA EL CARRUSEL -->
+    <div class="container my-5 mt-4">
+      <div class="carousel slide" id="slider" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#slider"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#slider"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#slider"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/images/productos/hearts-4521088.png" alt="" class="d-block w-100" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-dark">Lorem, ipsum dolor.</h5>
+              <p class="text-dark">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Commodi, magni!
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/images/productos/bracelet-4704067.png" alt="" class="d-block w-100" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-dark">Lorem, ipsum dolor. 2</h5>
+              <p class="text-dark">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Commodi, magni!
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/images/productos/broch_01.png" alt="" class="d-block w-100" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-dark"><span class="badge bg-secondary">Lorem, ipsum dolor. 3</span></h5>
+              <p class="text-dark">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Commodi, magni!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <a
+          href="#slider"
+          class="carousel-control-prev"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+
+        <a
+          href="#slider"
+          class="carousel-control-next"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"> Next </span>
+        </a>
+      </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+
+
+
+      <div id="accordion" class="container">
+          <div class="card">
+            <div class="card-header">
+              <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                ¿Las joyas están certificadas?
+              </a>
+            </div>
+            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+              <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+              ¿Cómo se realiza el envío?
+            </a>
+            </div>
+            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                ¿Qué formas de pago se admiten?
+              </a>
+            </div>
+            <div id="collapseThree" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      <br>
+      <br>
+      <br>
+      <br>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+      crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+       crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" 
+      crossorigin="anonymous"></script>
+    
+
+
   </body>
 </html>
