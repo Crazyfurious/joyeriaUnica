@@ -1,5 +1,5 @@
 /*OPCIONES PRINCIPALES */
-
+/* -------------------------------------------------------------------------------------
 *{
     margin: 0;
     padding: 0;
@@ -34,22 +34,10 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;
   border: 5px solid #eaeaea;
 }
+-------------------------------------------------------------------------------------*/
 
 header {
-  /* background: linear-gradient(90deg, rgb(30, 201, 227) 0%, rgb(255, 255, 255) 50%, rgb(30, 201, 227) 100%); */
   background: linear-gradient(75deg,#eaeaea 15%, #eaeaea 50%, #eaeaea 85%);
-  /* background: linear-gradient(75deg, rgb(234, 234, 234) 15%, rgb(227, 210, 72) 50%, rgb(234, 234, 234) 85%); */
-}
-  
-footer {
-  background: linear-gradient(75deg,#eaeaea 15%, #eaeaea 50%, #eaeaea 85%);
-    /* TUVE PROBLEMAS CON EL FOOTER NO SE ME QUEDABA ABAJO, Y SOLO LO PUDE SOLUCIONAR CON ESTAS REGLAS */
-    position: fixed;
-    display: flex;
-    height: 250px;
-    left: 0;
-    bottom: 0;
-    width: 100%;
 }
 
 a {
@@ -86,11 +74,19 @@ h5 {
   font-size: 1em;
   }
 
+/* -------------------------------------------------------------------------------------
+
 div {
   text-align: justify;
 }
 
+--------------------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------------------
+
 ::-moz-selection { /* Code for Firefox */
+
+/* -------------------------------------------------------------------------------------  
     background: #FFCC33;
 }
   
@@ -98,7 +94,11 @@ div {
     background: #e7c4e4;
 }
 
+--------------------------------------------------------------------------------------- */
+
 /* CLASES DEL HEADER */
+
+/* -------------------------------------------------------------------------------------
 
 .contenedor {
     width: 100%;
@@ -118,12 +118,13 @@ div {
     justify-content: center;
     align-items: center;
 }
-
+------------------------------------------ */
 .encabezado__imagenes {
     width: 100%;
     height: 100%;
-    /* display: block;     */
 }
+
+/* ----------------------------------------------------------
 
 .encabezado__logo {
     height: 50px;
@@ -157,7 +158,11 @@ div {
   transition-timing-function: ease-in;
 }
 
+------------------------------------------------------------------------------------- */
+
 /* ----------------- PARA BARRA DE NAVEGACION */
+
+/* -------------------------------------------------------------------------------------
 
 .nav {
   height: 40px;
@@ -181,6 +186,8 @@ div {
 al final tuve que asignar el vertical-align, más el padding, más
 jugar con el tamaño de las imágenes para que se representará bien */
 
+/* -------------------------------------------------------------------------------------
+
 .nav__elementos img { 
   width: 36px;
   height: 48px;
@@ -191,6 +198,8 @@ jugar con el tamaño de las imágenes para que se representará bien */
 
   /* TITULO ENCABEZADO ANIMADO 
   Probando el cambio de colores */
+
+/* -------------------------------------------------------------------------------------
 
 .encabezado__titulo--H1 {
   letter-spacing: 0;
@@ -218,6 +227,8 @@ jugar con el tamaño de las imágenes para que se representará bien */
 /* ------------------------- SECCION PRINCIPAL ---------- */
 /* Creamos el slider para las imágenes centrales y texto */
 
+/* -------------------------------------------------------------------------------------
+
 .seccion__slider {
 display: grid;
 grid-template-columns: 1fr 0.6fr;
@@ -239,11 +250,17 @@ border: 3px solid;
 border-image-slice: 1;
 border-image-source: linear-gradient(to right, #743ad5, #d53a9d, #eaeaea);
 /* Configuración de Firefox para la barra de scroll */
+
+/* -------------------------------------------------------------------------------------
+
 scrollbar-width: thin;
 scrollbar-color: #e23487 #eaeaea;
 }
 
 /* Configuración de Chrome, Edge, etc.. para la barra de scroll */
+
+/* -------------------------------------------------------------------------------------
+
 .seccion__slider::-webkit-scrollbar {
   width: 12px;
 }
@@ -259,6 +276,8 @@ scrollbar-color: #e23487 #eaeaea;
 }
 
 /* Continuamos con el slider, después de configurar la barra de scroll */
+
+/* -------------------------------------------------------------------------------------
 
 .seccion__slider img {
   width: 792px;
@@ -283,6 +302,8 @@ scrollbar-color: #e23487 #eaeaea;
 }
 
 /* Creación del botón de comprar y su animación */
+
+/* -------------------------------------------------------------------------------------
 
 .seccion__slider--comprar {
   height: 60px;
