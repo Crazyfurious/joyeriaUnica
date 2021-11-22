@@ -54,25 +54,25 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html"><img src="images/nav/1%20Home.png" alt="" class="imagenes__nav" /> Inicio</a>
+                  <a class="nav-link active" aria-current="page" href="index.html"><img src="images/nav/1%20Home.png" alt="" class="nav__imagenes mb-2" /> Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="tienda.html"><img src="images/nav/2%20Store.png" alt="" class="imagenes__nav" /> Tienda</a>
+                  <a class="nav-link" href="tienda.html"><img src="images/nav/2%20Store.png" alt="" class="nav__imagenes mb-2" /> <span class="align-items-center">Tienda</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="novedades.html"><img src="images/nav/3%20Novedades.png" alt="" class="imagenes__nav" /> Novedades</a>
+                  <a class="nav-link" href="novedades.html"><img src="images/nav/3%20Novedades.png" alt="" class="nav__imagenes mb-2" /> Novedades</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown mb-1">                  
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Más secciones
+                    <img src="images/nav/6 Mas.png" alt="" class="nav__imagenes" /> <span class="justify-content-center">Más secciones</span>
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="servicios.html"><img src="images/nav/4%20servicios.png" alt="" class="imagenes__nav" /> Servicios</a></li>
-                    <li><a class="dropdown-item" href="contacto.html"><img src="images/nav/5%20Contacto.png" alt="" class="imagenes__nav" /> Contacto</a></li>
+                    <li><a class="dropdown-item" href="servicios.html"><img src="images/nav/4%20servicios.png" alt="" class="nav__imagenes" /> Servicios</a></li>
+                    <li><a class="dropdown-item" href="contacto.html"><img src="images/nav/5%20Contacto.png" alt="" class="nav__imagenes" /> Contacto</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#"><span class="position-absolute top-99 start-25 translate-left badge rounded-pill bg-danger">2</span><img src="images/header/cesta.svg" alt="Cesta" class="imagenes__nav" />
+                    <li><a class="dropdown-item" href="#"><span class="position-absolute top-99 start-25 translate-left badge rounded-pill bg-danger">2</span><img src="images/header/cesta.svg" alt="Cesta" class="nav__imagenes" />
                         Cesta</a></li>
-                    <li><a class="dropdown-item" href="#"><img src="images/header/identificarme.svg" alt="Identificarme" class="imagenes__nav" /> Identificarme</a></li>
+                    <li><a class="dropdown-item" href="#"><img src="images/header/identificarme.svg" alt="Identificarme" class="nav__imagenes" /> Identificarme</a></li>
                   </ul>
                 </li>
               </ul>
@@ -115,84 +115,220 @@
       </div> <!-- FIN DEL CONTENDOR DEL ENCABEZADO -->
     </header>
 
-    <!-- Seccion para recoger el título principal de la web con animación -->
-    <section>
-      <div class="encabezado contenedor">
-        <h1 class="encabezado__titulo--H1">NUEVA COLECCIÓN OTOÑO</h1>
-      </div>
-    </section>
+
+
+<div class="container my-4">
+
+  <p class="font-weight-bold">Bootstrap carousel multiple items is an improved version of the standard bootstrap
+    carousel which allows you to put inside more than one element.</p>
     
-    <!-- **************** Sección central destacada ***************************** -->
-    <section>
-      <div class="contenedor contenedor--article">
-        <!-- La sección divida en cuatro -->
-        <article class="seccion__slider">
-          <img src="images/productos/broch_01.png" alt="frioInvierno" />
-          <div class="seccion__slider-texto">
-            <h3 class="seccion__slider-texto-titulo">BROCHE INVERNAL</h3>
-            <p class="seccion__slider-texto-margen">Modi molestias velit Ipsa unde nihil quasi, provident natus maiores.</p>
-            <div class="seccion__slider--comprar">
-              <a href="tienda.html">
-                <svg class="seccion__slider--comprar-tamano" xmlns="http://www.w3.org/2000/svg">
-                  <rect class="seccion__slider--comprar-linea seccion__slider--comprar-tamano" />
-                </svg>
-                <div class="seccion__slider--comprar-texto">
-                  COMPRAR
-                </div>
-              </a>
+  <p><strong>Detailed documentation and more examples of Bootstrap grid you can find in our <a href="https://mdbootstrap.com/docs/standard/components/carousel/"
+                                                                                                   target="_blank">Bootstrap Carousel Docs</a>.</p>
+    
+  <p>See also <a target="_blank" href="https://mdbootstrap.com/docs/standard/plugins/multi-item-carousel/"><strong>Advanced mutli item carousel plugin</strong></a> or <a target="_blank" href="https://mdbootstrap.com/snippets/standard/mdbootstrap/2904002"><strong>multi-item carousel example for the newest Bootstrap 5</strong></a>.</p>
+    
+  <hr class="mt-5">
+    
+  <p>Built with <a target="_blank" href="https://mdbootstrap.com/docs/standard/">Material Design for Bootstrap</a> - free and powerful Bootstrap UI KIT</p>
+    
+  <a class="btn btn-primary me-2" href="https://mdbootstrap.com/docs/standard/getting-started/installation/" target="_blank" role="button">Download MDB UI KIT <i class="fa fa-download"></i></a>
+  <a class="btn btn-danger me-2" target="_blank" href="https://mdbootstrap.com/docs/standard/" role="button">Learn more</a>
+  <a class="btn btn-success me-2" target="_blank" href="https://mdbootstrap.com/docs/standard/getting-started/" role="button">Tutorials</a>
+  <a class="btn btn-dark me-2" target="_blank" href="https://github.com/mdbootstrap/mdb-ui-kit" role="button">GitHub <i class="fa fa-github ms-2"></i></a>
+    
+  <hr class="mb-5"/>
+
+
+
+
+
+
+
+
+ <!--Carousel Wrapper-->
+ <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+  <!--Controls-->
+  <div class="controls-top">
+    <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+    <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+  </div>
+  <!--/.Controls-->
+
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+    <li data-target="#multi-item-example" data-slide-to="1"></li>
+    <li data-target="#multi-item-example" data-slide-to="2"></li>
+  </ol>
+  <!--/.Indicators-->
+
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+
+    <!--First slide-->
+    <div class="carousel-item active">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                 alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">1-1</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
             </div>
           </div>
-          <img src="images/productos/broch_02.png" alt="dobleTrebol" />    
-            <div class="seccion__slider-texto">
-              <h3 class="seccion__slider-texto-titulo">DOBLE TREBOL</h3>
-              <p class="seccion__slider-texto-margen">vero magni nesciunt explicabo cum, vel esse dignissimos totam nisi.</p>
-              <div class="seccion__slider--comprar">
-                <a href="tienda.html">
-                  <svg class="seccion__slider--comprar-tamano" xmlns="http://www.w3.org/2000/svg">
-                    <rect class="seccion__slider--comprar-linea seccion__slider--comprar-tamano" />
-                  </svg>
-                  <div class="seccion__slider--comprar-texto">
-                    COMPRAR
-                  </div>
-                </a>
-              </div>
+        </div>
+
+        <div class="col-md-4 clearfix d-none d-md-block">
+          <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+                 alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">1-2</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
             </div>
-          <img src="images/productos/broch_03.png" alt="trebolesCaidos" />
-            <div class="seccion__slider-texto">
-              <h3 class="seccion__slider-texto-titulo">PETALOS CELESTIALES</h3>
-              <p class="seccion__slider-texto-margen">fugit ratione. A, voluptates rerum alias error dolorum praesentium!</p>
-              <div class="seccion__slider--comprar">
-                <a href="tienda.html">
-                  <svg class="seccion__slider--comprar-tamano" xmlns="http://www.w3.org/2000/svg">
-                    <rect class="seccion__slider--comprar-linea seccion__slider--comprar-tamano" />
-                  </svg>
-                  <div class="seccion__slider--comprar-texto">
-                    COMPRAR
-                  </div>
-                </a>
-              </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 clearfix d-none d-md-block">
+          <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+                 alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">1-3</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
             </div>
-          <img src="images/productos/anil_04.png" alt="alianzas" />
-            <div class="seccion__slider-texto">
-              <h3 class="seccion__slider-texto-titulo">OJO DE SAURON</h3>          
-              <p class="seccion__slider-texto-margen">Con una podrás dominarlas a todas!. 
-                Han sido fabricados en los altos hornos de Moria, resisten hasta el 
-                fuego del Orodruin.
-              </p>
-              <div class="seccion__slider--comprar">
-                <a href="tienda.html">
-                  <svg class="seccion__slider--comprar-tamano" xmlns="http://www.w3.org/2000/svg">
-                    <rect class="seccion__slider--comprar-linea seccion__slider--comprar-tamano" />
-                  </svg>
-                  <div class="seccion__slider--comprar-texto">
-                    COMPRAR
-                  </div>
-                </a>
-              </div>
-            </div>            
-        </article>
+          </div>
+        </div>
       </div>
-    </section>
+
+    </div>
+    <!--/.First slide-->
+
+    <!--Second slide-->
+    <div class="carousel-item">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
+                 alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">2-1</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 clearfix d-none d-md-block">
+          <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg"
+                 alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">2-2</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 clearfix d-none d-md-block">
+          <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"
+                 alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">2-3</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--/.Second slide-->
+
+    <!--Third slide-->
+    <div class="carousel-item">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+                 alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">3-1</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 clearfix d-none d-md-block">
+          <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg"
+                 alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">3-2</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 clearfix d-none d-md-block">
+          <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
+                 alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">3-3</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--/.Third slide-->
+
+  </div>
+  <!--/.Slides-->
+
+</div>
+<!--/.Carousel Wrapper-->
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- AQUI VA EL PIE DE PÁGINA -->
     <div class="container">
       <footer class="py-5">
