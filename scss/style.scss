@@ -1,148 +1,40 @@
-/* Variables */
-
-/* --- Colores --- */
-$col_pink: #e23487;
-$col_softPink: #d53a9d;
-$col_purple: #743ad5;
-$col_white: #eaeaea;
-$col_hardwhite: #e7c4e4;
-
-/* --- Fuentes --- */
-$fon_first: 'Montserrat', sans-serif;
-$fon_second: 'Fira Sans', sans-serif;
-
-/* Efectos */
-
-@keyframes draw {
-    0% {
-      stroke-dasharray: 140 540;
-      stroke-dashoffset: -474;
-      stroke-width: 8px;
-    }
-      100% {
-        stroke-dasharray: 760;
-        stroke-dashoffset: 0;
-        stroke-width: 5px;
-    }
-}  
-
-.boton_comprar {  
-    
-    & a:hover {
-        text-decoration: none;
-        transition-property: all;
-        transition-duration: 0.18s;
-        transition-timing-function: ease-in;
-       }
-      
-    &:hover {
-        -webkit-animation: 0.5s draw linear forwards;
-        animation: 0.5s draw linear forwards;
-       }      
-}
-
-body {
-    background-image: url(../images/fondos/body_backup_Tres.png);
-    background-position: 0 0;
-    background-repeat: repeat;
-    font-family: 'Montserrat', sans-serif;
-  }
+@import "variables";
+@import "efectos";
+@import "htmlsem";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
   
-  body::-webkit-scrollbar {
-  width: 12px;
-  }
-  
-  body::-webkit-scrollbar-track {
-  background: #eaeaea;
-  }
-  
-  body::-webkit-scrollbar-thumb {
-  background-color: #e23487;
-  border-radius: 20px;
-  border: 5px solid #eaeaea;
-  }
-  
-  header {
-    background: linear-gradient(75deg,#eaeaea 15%, #eaeaea 50%, #eaeaea 85%);
-  }
-  
-  a {
-      text-decoration: none;
-      font-family: /*'Merriweather', serif;*/ 'Fira Sans', sans-serif;   
-      color: black;
-      transition: color 0.2s ease-in-out 0s 
-  }
-    
-  a:visited {
-      color:rgb(63, 63, 63);
-  }
-    
-  a:hover, a:focus {
-      color: #e23487;
-      /*text-decoration: underline;*/
-  }
-    
-  h1 {
-      font-family: 'Fira Sans', sans-serif;
-      font-size: 2em;
-      text-align: center;
-      line-height: normal;
-  }
-  
-  h3 {
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 1.5em;
-  }
-  
-  h5 {
-    font-family: 'Fira Sans', sans-serif;
-    display: inline;
-    font-size: 1em;
-    }
-  
-  .encabezado__imagenes {
+.encabezado__imagenes {
       width: 150px;
       height: 35px;
       margin-bottom: 10px;
   }
   
-  .nav__imagenes {
+.nav__imagenes {
     width: 22px;
     height: 22px;
   }
   
-  .carousel-indicators{		
-    top:105%;		
-  }
-    
-  .carousel-indicators li{
-    background-color:red;
-  }
-  .carousel-control-prev-icon {
+.carousel-indicators {
+  top:105%;		
+
+  & li {
+      background-color:red;
+    }
+}
+
+.carousel-fondo {
+  background-image: url(../images/fondos/body_backup_Tres.png);
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.carousel-control-prev-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-  }
+}
   
-  .carousel-control-next-icon {
+.carousel-control-next-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-  }
-  section{
-  padding:100px 0px;
-  }
-  
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -427,18 +319,18 @@ body {
   /* Creación del botón de comprar y su animación */
   
   /* -------------------------------------------------------------------------------------
-  
+ 
   .seccion__slider--comprar {
-    height: 60px;
+    height: 40px;
     margin: 0 auto;
     position: relative;
     top: 50%;
     left: 1%;
     transform: translateY(-50%);
     width: 320px;
-    margin-top: 20px;
+    /*margin-top: 20px;
   }
-  
+
   .seccion__slider--comprar-linea {
     fill: transparent;
     stroke-dasharray: 140 540;
@@ -454,18 +346,18 @@ body {
     text-align: center;
     line-height: 32px;
     position: relative;
-    top: -48px;
+    top: 0px;
   }
   
   .seccion__slider--comprar-tamano {
-    height: 60px;
-    width: 320px;
+    height: 20px;
+    width: 150px;
   }
   
   @keyframes draw {
     0% {
-      stroke-dasharray: 140 540;
-      stroke-dashoffset: -474;
+      stroke-dasharray: 40 40;
+      stroke-dashoffset: 74;
       stroke-width: 8px;
     }
     100% {

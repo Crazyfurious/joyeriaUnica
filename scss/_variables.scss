@@ -1,0 +1,22 @@
+/* Variables */
+
+/* --- Colores --- */
+$success: #e23487;
+$primary: black;
+$col_softPink: #d53a9d;
+$col_purple: #743ad5;
+$col_white: #eaeaea;
+$col_hardwhite: #e7c4e4;
+$col_gold: #e3d248;
+$body-color: #636363;
+$link-hover-color: #e23487;
+$warning: red;
+
+$theme-colors: (
+  "primary": $primary,
+  "warning": $success
+);
+
+/* --- Fuentes --- */
+$fon_first: 'Montserrat', sans-serif;
+$fon_second: 'Fira Sans', sans-serif;
