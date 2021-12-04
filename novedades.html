@@ -42,76 +42,74 @@
   <body>
     <!-- Encabezado. Aquí situaré el logo, el menú de navegación y los botones de la cesta e identificarte -->  
     <header>
-      <div>
-        <!-- El menú de navegación -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="images/header/logo.svg" alt="Logo" class="encabezado__imagenes"/></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html"><img src="images/nav/1%20Home.png" alt="" class="nav__imagenes mb-2" /> Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="tienda.html"><img src="images/nav/2%20Store.png" alt="" class="nav__imagenes mb-2" /> <span class="align-items-center">Tienda</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="novedades.html"><img src="images/nav/3%20Novedades.png" alt="" class="nav__imagenes mb-2" /> Novedades</a>
-                </li>
-                <li class="nav-item dropdown mb-1">                  
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="images/nav/6 Mas.png" alt="" class="nav__imagenes" /> <span class="justify-content-center">Más secciones</span>
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="servicios.html"><img src="images/nav/4%20servicios.png" alt="" class="nav__imagenes" /> Servicios</a></li>
-                    <li><a class="dropdown-item" href="contacto.html"><img src="images/nav/5%20Contacto.png" alt="" class="nav__imagenes" /> Contacto</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#"><span class="position-absolute top-99 start-25 translate-left badge rounded-pill bg-danger">2</span><img src="images/header/cesta.svg" alt="Cesta" class="nav__imagenes" />
-                        Cesta</a></li>
-                    <li><a class="dropdown-item" href="#"><img src="images/header/identificarme.svg" alt="Identificarme" class="nav__imagenes" /> Identificarme</a></li>
-                  </ul>
-                </li>
-              </ul>
+      <!-- El menú de navegación -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="images/header/logo.svg" alt="Logo" class="encabezado__imagenes"/></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"><img src="images/nav/1%20Home.png" alt="" class="nav__imagenes mb-2" /> Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tienda.html"><img src="images/nav/2%20Store.png" alt="" class="nav__imagenes mb-2" /> <span class="align-items-center">Tienda</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="novedades.html"><img src="images/nav/3%20Novedades.png" alt="" class="nav__imagenes mb-2" /> Novedades</a>
+              </li>
+              <li class="nav-item dropdown mb-1">                  
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="images/nav/6 Mas.png" alt="" class="nav__imagenes" /> <span class="justify-content-center">Más secciones</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="servicios.html"><img src="images/nav/4%20servicios.png" alt="" class="nav__imagenes" /> Servicios</a></li>
+                  <li><a class="dropdown-item" href="contacto.html"><img src="images/nav/5%20Contacto.png" alt="" class="nav__imagenes" /> Contacto</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#"><span class="position-absolute top-99 start-25 translate-left badge rounded-pill bg-danger">2</span><img src="images/header/cesta.svg" alt="Cesta" class="nav__imagenes" />
+                      Cesta</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="images/header/identificarme.svg" alt="Identificarme" class="nav__imagenes" /> Identificarme</a></li>
+                </ul>
+              </li>
+            </ul>
 
-              <button type="button" class="btn btn-primary me-5" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"> Envíanos tus consultas</button>
+            <button type="button" class="btn btn-primary me-5" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"> Envíanos tus consultas</button>
 
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Escribe tu consulta</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <form>
-                        <div class="mb-3">
-                          <label for="recipient-name" class="col-form-label">Destinatario:</label>
-                          <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                        <div class="mb-3">
-                          <label for="message-text" class="col-form-label">Mensaje:</label>
-                          <textarea class="form-control" id="message-text"></textarea>
-                        </div>
-                      </form>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                      <button type="button" class="btn btn-primary">Enviar</button>
-                    </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Escribe tu consulta</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Destinatario:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                      <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Mensaje:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Enviar</button>
                   </div>
                 </div>
               </div>
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Buscador</button>
-              </form>
             </div>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscador</button>
+            </form>
           </div>
-        </nav>
-      </div> <!-- FIN DEL CONTENDOR DEL ENCABEZADO -->
+        </div>
+		  </nav>
     </header>
     <!-- COMIENZA EL CARRUSEL -->
     <div class="container my-5 mt-4">
