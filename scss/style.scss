@@ -12,6 +12,7 @@
 .nav__imagenes {
     width: 22px;
     height: 22px;
+    align-items: center;
   }
   
 .carousel-indicators {
@@ -36,10 +37,134 @@
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
 
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .nano {
+    width: 100%;
+    margin: 15px auto;
+    text-align: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    } 
 
+  .nano__suscribir-formulario {
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    }
 
+  .nano__suscribir {
+    width: 100%;
+    margin-left: 0%;
+    padding-top: 2%;
+    }
 
+  .nano__suscribir-input {
+      width: 50%;
+      text-align: center;
+      align-items: center;
+    }
+    
+  .nano__suscribir-boton {
+      width: 50%;
+      text-align: center;
+      align-items: center;
+    }
+
+  .enviar__consultas {
+      margin-bottom: 15px;
+    }
+
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  
+  .nano {
+    width: 30%;
+    margin-left: 3%;
+    text-align: center;
+    align-items: center;
+    }
+
+  .nano__suscribir {
+    width: 100%;
+    margin-left: 0%;
+    padding-top: 2%;
+    offset:unset ;      
+    flex-direction: column-reverse;
+    }
+
+  .nano__suscribir-formulario {
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    }
+
+  .nano__suscribir-input {
+      width: 50%;
+      text-align: center;
+      align-items: center;
+    }
+
+  .nano__suscribir-boton {
+    width: 50%;
+    }
+
+  .enviar__consultas {
+    margin-bottom: 15px;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1043px) {
+  
+  .enviar__consultas {
+    margin-bottom: 15px;
+  }
+
+}
+
+@media (min-width: 1044px){
+  .navbar-expand-custom {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+  }
+  .navbar-expand-custom .navbar-nav {
+      flex-direction: row;
+  }
+  .navbar-expand-custom .dropdown-menu {
+      position: absolute;
+  }
+  .navbar-expand-custom .nav-link {
+      padding-right: .5rem;
+      padding-left: .5rem;
+  }
+  .navbar-expand-custom > .container {
+      flex-wrap: nowrap;
+  }
+  .navbar-expand-custom .navbar-collapse {
+      display: flex!important;
+      flex-basis: auto;
+  }
+  .navbar-expand-custom .navbar-toggler {
+      display: none;
+  }
+
+}
 
 
 

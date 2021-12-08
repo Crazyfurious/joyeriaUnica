@@ -17,24 +17,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Merriweather&family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="footers.css" rel="stylesheet">
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
 
     <title>Joyas Unicas</title>
 
@@ -43,7 +25,7 @@
     <!-- Encabezado. Aquí situaré el logo, el menú de navegación y los botones de la cesta e identificarte -->  
     <header>
       <!-- El menú de navegación -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-custom navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"><img src="images/header/logo.svg" alt="Logo" class="encabezado__imagenes"/></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,7 +44,7 @@
               </li>
               <li class="nav-item dropdown mb-1">                  
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src="images/nav/6 Mas.png" alt="" class="nav__imagenes" /> <span class="justify-content-center">Más secciones</span>
+                  <img src="images/nav/6 Mas.png" alt="" class="nav__imagenes" /><span class="justify-content-center mas__secciones"> Más secciones</span>
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="servicios.html"><img src="images/nav/4%20servicios.png" alt="" class="nav__imagenes" /> Servicios</a></li>
@@ -75,7 +57,7 @@
               </li>
             </ul>
 
-            <button type="button" class="btn btn-primary me-5" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"> Envíanos tus consultas</button>
+            <button type="button" class="btn btn-primary me-5 enviar__consultas" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Consúltanos</button>
 
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog">
@@ -105,7 +87,6 @@
             </div>
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscador</button>
             </form>
           </div>
         </div>
@@ -229,10 +210,11 @@
       </div>
     </section>
 
+    <!-- COMIENZA EL FOOTER -->
     <div class="container">
       <footer class="py-5">
         <div class="row">
-          <div class="col-2">
+          <div class="col-2 nano">
             <h5>INFORMACIÓN</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Devoluciones y cambios</a></li>
@@ -243,7 +225,7 @@
             </ul>
           </div>
     
-          <div class="col-2">
+          <div class="col-2 nano">
             <h5>POLÍTICAS</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Condiciones de compra</a></li>
@@ -254,7 +236,7 @@
             </ul>
           </div>
     
-          <div class="col-2">
+          <div class="col-2 nano">
             <h5>¿NECESITAS AYUDA?</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Trabaja con nosotros</a></li>
@@ -265,20 +247,20 @@
             </ul>
           </div>
     
-          <div class="col-4 offset-1">
-            <form>
-              <h5>Suscribete a nuestro boletín</h5>
-              <p>Conocerás nuestras mejores ofertas y promociones.</p>
-              <div class="d-flex w-100 gap-2">
-                <label for="newsletter1" class="visually-hidden">Su correo electrónico</label>
-                <input id="newsletter1" type="text" class="form-control" placeholder="Correo electrónico">
-                <button class="btn btn-primary" type="button">Suscribirme</button>
+          <div class="col-4 offset-1 nano__suscribir">
+            <form class="nano nano__suscribir">
+              <h5 class="nano__suscribir">Suscribete a nuestro boletín</h5>
+              <p class="nano__suscribir">Conocerás nuestras mejores ofertas y promociones.</p>
+              <div class="d-flex w-100 gap-2 nano__suscribir-formulario">
+                <label for="newsletter1" class="visually-hidden nano__suscribir">Su correo electrónico</label>
+                <input id="newsletter1" type="text" class="form-control nano__suscribir" placeholder="Correo electrónico">
+                <button class="btn btn-primary nano__suscribir" type="button">Suscribirme</button>
               </div>
             </form>
           </div>
         </div>
     
-        <div class="d-flex justify-content-between py-4 my-4 border-top">
+        <div class="d-flex justify-content-between py-4 my-4 border-top nano nano__suscribir">
           <address>&copy; 2021 JoyerUnic. Todos los derechos reservados</address>
           <p>joyerunic@joyerunic.es</p>
           <p>Coderhouse RULES!!!</p>
