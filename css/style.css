@@ -10626,7 +10626,15 @@ textarea.form-control-lg {
   top: 105%;
 }
 .carousel-indicators li {
-  background-color: red;
+  background-color: black;
+}
+
+.card {
+  background-color: transparent;
+}
+
+.card-body {
+  background-color: white;
 }
 
 .carousel-fondo {
@@ -10651,7 +10659,12 @@ textarea.form-control-lg {
   user-select: none;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 576px) {
+.imagen__tarjeta {
+  width: 208px;
+  height: 172px;
+}
+
+@media (min-width: 0px) and (max-width: 576px) {
   .nano {
     width: 100%;
     margin: 15px auto;
@@ -10688,7 +10701,7 @@ textarea.form-control-lg {
     margin-bottom: 15px;
   }
 }
-@media only screen and (min-width: 577px) and (max-width: 992px) {
+@media (min-width: 577px) and (max-width: 992px) {
   .nano {
     width: 30%;
     margin-left: 3%;
@@ -10729,7 +10742,7 @@ textarea.form-control-lg {
     font-size: 3.5rem;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1043px) {
+@media (min-width: 992px) and (max-width: 1043px) {
   .enviar__consultas {
     margin-bottom: 15px;
   }
@@ -10767,6 +10780,138 @@ textarea.form-control-lg {
     display: none;
   }
 }
+/*@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .nano {
+    width: 100%;
+    margin: 15px auto;
+    text-align: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    } 
+
+  .nano__suscribir-formulario {
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    }
+
+  .nano__suscribir {
+    width: 100%;
+    margin-left: 0%;
+    padding-top: 2%;
+    }
+
+  .nano__suscribir-input {
+      width: 50%;
+      text-align: center;
+      align-items: center;
+    }
+
+  .nano__suscribir-boton {
+      width: 50%;
+      text-align: center;
+      align-items: center;
+    }
+
+  .enviar__consultas {
+      margin-bottom: 15px;
+    }
+
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+
+  .nano {
+    width: 30%;
+    margin-left: 3%;
+    text-align: center;
+    align-items: center;
+    }
+
+  .nano__suscribir {
+    width: 100%;
+    margin-left: 0%;
+    padding-top: 2%;
+    offset:unset ;      
+    flex-direction: column-reverse;
+    }
+
+  .nano__suscribir-formulario {
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    }
+
+  .nano__suscribir-input {
+      width: 50%;
+      text-align: center;
+      align-items: center;
+    }
+
+  .nano__suscribir-boton {
+    width: 50%;
+    }
+
+  .enviar__consultas {
+    margin-bottom: 15px;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1043px) {
+
+  .enviar__consultas {
+    margin-bottom: 15px;
+  }
+
+}
+
+@media (min-width: 1044px){
+  .navbar-expand-custom {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+  }
+  .navbar-expand-custom .navbar-nav {
+      flex-direction: row;
+  }
+  .navbar-expand-custom .dropdown-menu {
+      position: absolute;
+  }
+  .navbar-expand-custom .nav-link {
+      padding-right: .5rem;
+      padding-left: .5rem;
+  }
+  .navbar-expand-custom > .container {
+      flex-wrap: nowrap;
+  }
+  .navbar-expand-custom .navbar-collapse {
+      display: flex!important;
+      flex-basis: auto;
+  }
+  .navbar-expand-custom .navbar-toggler {
+      display: none;
+  }
+
+} */
+::-moz-selection {
+  /* Code for Firefox */
+  background: #FFCC33;
+  color: black;
+}
+
+::selection {
+  background: #FFCC33;
+  /* background: #e7c4e4;*/
+  color: #00061b;
+}
+
 /*OPCIONES PRINCIPALES */
 /* -------------------------------------------------------------------------------------
 *{
@@ -10809,14 +10954,7 @@ div {
 --------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------
 
-::-moz-selection { /* Code for Firefox */
-/* -------------------------------------------------------------------------------------  
-    background: #FFCC33;
-}
 
-::selection {
-    background: #e7c4e4;
-}
 
 --------------------------------------------------------------------------------------- */
 /* CLASES DEL HEADER */
