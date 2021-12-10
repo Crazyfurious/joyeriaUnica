@@ -10610,6 +10610,16 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.piePagina {
+  background-image: url(../images/fondos//body_primero.png);
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.justificar {
+  text-align: justify;
+}
+
 .encabezado__imagenes {
   width: 150px;
   height: 35px;
@@ -10627,6 +10637,12 @@ textarea.form-control-lg {
 }
 .carousel-indicators li {
   background-color: black;
+}
+
+.btn-floating {
+  background-color: black;
+  color: #FFCC33;
+  top: 105%;
 }
 
 .card {

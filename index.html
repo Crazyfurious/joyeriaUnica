@@ -95,17 +95,19 @@
 
     <!--Contenedor seccion central-->
 
-    <div class="d-flex m-0 mt-1">
-      <img class="img-fluid" src="/images/header/banner.jpg" >
+    <div class="d-flex mt-1">
+      
+      <video data-v-3e3263dc="" autoplay="autoplay" loop="loop" playsinline="true" class="video w-100">
+        <source data-v-3e3263dc="" src="/images/web/video.webm" type="video/webm"></video>
+      <!--<img class="img-fluid mx-auto w-100 h-50 d-inline-block" src="/images/header/banner.jpg" >-->
     </div>
 
     <!-- <hr class="mb-5"/> -->
     <div class="container my-4">
 
-      
-      <p>ESTO ES UNA PÁGNIA DE PRUEBA Y APRENDIZAJE</p>
+      <h1>JOYEROUNIC. COMPRA ONLINE O PRESENCIAL</h1>
 
-      <p class="font-weight-bold">Descubre en el catálogo de nuestra joyería online las últimas tendencias en 
+      <p class="font-weight-bold justificar">Descubre en el catálogo de nuestra joyería online las últimas tendencias en 
       complementos. Encontrarás <strong>las mejores marcas de joyería y relojería</strong> como Pandora, Swarovski,
       Lotus o Viceroy además de nuestras colecciones de joyas de fabricación propia, artículos de oro de 18 quilates
       de la mejor calidad al mejor precio garantizado. Déjate sorprender con lo último en colgantes, sortijas o 
@@ -114,15 +116,16 @@
       <p>También puedes <a href="https://img.huffingtonpost.com/asset/5c8b6d942300003000e82b23.jpeg?ops=scalefit_630_noupscale">
       encontrarnos</a> en nuestras 7 joyerías en <strong>Springfield y el Area 51</strong></p>  
 
-
-
       <!--Carrusel-->
       <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+        <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="bi bi-arrow-bar-left"></i></a>
+        <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="bi bi-arrow-bar-right"></i></a>
+
 
         <!--Controles-->
         <div class="controls-top">
-          <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-          <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+          <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="bi bi-arrow-bar-left"></i></a>
+          <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="bi bi-arrow-bar-right"></i></a>
         </div>
         <!--/.Controles-->
 
@@ -279,10 +282,10 @@
     <!--/.Contenedor seccion central-->
 
     <!--PIE DE PÁGINA -->
-    <div class="container">
-      <footer class="py-5">
+   <!-- <div class="container"> -->
+      <footer class="pt-5 pb-1 container-fluid piePagina">
         <div class="row">
-          <div class="col-2 nano">
+          <div class="col-2 offset-1 nano">
             <h5>INFORMACIÓN</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Devoluciones y cambios</a></li>
@@ -315,7 +318,7 @@
             </ul>
           </div>
     
-          <div class="col-4 offset-1 nano__suscribir">
+          <div class="col-3 offset-1 nano__suscribir">
             <form class="nano nano__suscribir">
               <h5 class="nano__suscribir">Suscribete a nuestro boletín</h5>
               <p class="nano__suscribir">Conocerás nuestras mejores ofertas y promociones.</p>
@@ -329,11 +332,11 @@
         </div>
         
         <!-- Zona de dirección, datos, iconos RRSS-->
-        <div class="d-flex justify-content-between py-4 my-4 border-top nano nano__suscribir">
-          <address>&copy; 2021 JoyerUnic. Todos los derechos reservados</address>
-          <p>joyerunic@joyerunic.es</p>
-          <p>Coderhouse RULES!!!</p>
-          <ul class="list-unstyled d-flex">
+        <div class="d-flex pt-4 pb-1 mt-4 mb-1 border-top nano nano__suscribir">
+          <address class="offset-1">&copy; 2021 JoyerUnic. Todos los derechos reservados</address>
+          <p class="offset-1">joyerunic@joyerunic.es</p>
+          <p class="offset-2">Coderhouse RULES!!!</p>
+          <ul class="list-unstyled d-flex offset-1">
             <li class="ms-3"><a class="link-dark" href="https://www.twitter.com"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
             <li class="ms-3"><a class="link-dark" href="https://www.instagram.com"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
             <li class="ms-3"><a class="link-dark" href="https://www.facebook.com"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
@@ -341,7 +344,7 @@
         </div>
         <!-- ./ Zona de dirección, datos, iconos RRSS-->
       </footer>
-    </div>
+    <!--</div>-->
     <!-- ./ PIE DE PAGINA-->
     
     <!-- Iconos de las redes sociales -->

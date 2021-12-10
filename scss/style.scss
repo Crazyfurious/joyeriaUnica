@@ -2,7 +2,17 @@
 @import "efectos";
 @import "htmlsem";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-  
+
+.piePagina {
+  background-image: url(../images/fondos//body_primero.png);
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.justificar {
+  text-align: justify;
+}
+
 .encabezado__imagenes {
       width: 150px;
       height: 35px;
@@ -16,13 +26,18 @@
   }
   
 .carousel-indicators {
-  top:105%;		
+    top: 105%;
 
-  & li {
-      background-color:black;
+    li {
+        background-color:black;
     }
 }
 
+.btn-floating {
+  background-color: black;
+  color: #FFCC33;
+  top: 105%;
+}
 
 .card {
   background-color: transparent;
