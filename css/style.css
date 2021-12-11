@@ -10616,8 +10616,40 @@ textarea.form-control-lg {
   background-repeat: repeat;
 }
 
+.logo__pie h1, .logo__pie .h1 {
+  display: inline;
+}
+.logo__pie h2, .logo__pie .h2 {
+  display: inline;
+}
+.logo__pie div {
+  display: inline-block;
+  position: relative;
+  top: 5px;
+}
+.logo__pie span {
+  font-size: 60px;
+  align-items: center;
+}
+.logo__pie--centrar-texto {
+  text-align: center;
+}
+.logo__pie_encabezado {
+  font-size: 120px;
+}
+
+.enlinea {
+  display: inline;
+}
+
 .justificar {
   text-align: justify;
+}
+
+.centrar {
+  text-align: center;
+  align-items: center;
+  justify-content: center !important;
 }
 
 .encabezado__imagenes {
@@ -10689,16 +10721,20 @@ textarea.form-control-lg {
     flex-direction: column-reverse;
   }
 
-  .nano__suscribir-formulario {
-    width: 50%;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .nano__suscribir {
     width: 100%;
     margin-left: 0%;
     padding-top: 2%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .nano__suscribir-formulario {
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
   }
 
   .nano__suscribir-input {
@@ -10730,23 +10766,24 @@ textarea.form-control-lg {
     margin-left: 0%;
     padding-top: 2%;
     offset: unset;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    text-align: center;
   }
 
   .nano__suscribir-formulario {
-    width: 50%;
+    width: 100%;
     flex-direction: column;
     align-items: center;
   }
 
   .nano__suscribir-input {
     width: 50%;
-    text-align: center;
-    align-items: center;
+    justify-content: center;
   }
 
   .nano__suscribir-boton {
     width: 50%;
+    justify-content: center;
   }
 
   .enviar__consultas {

@@ -9,8 +9,49 @@
   background-repeat: repeat;
 }
 
+.logo__pie {
+
+  h1 {
+    display: inline;
+  }
+
+  h2 {
+    display: inline;
+  }
+
+  div {
+    display:inline-block;
+    position:relative;
+    top:5px;
+  }
+
+  span {
+    font-size: 60px;
+    align-items: center;
+  }
+
+  &--centrar-texto {
+    text-align: center;
+  }
+
+  &_encabezado {
+    font-size: 120px;
+  }
+
+}
+
+.enlinea {
+  display: inline;
+}
+
 .justificar {
   text-align: justify;
+}
+
+.centrar  {
+  text-align: center;
+  align-items: center;
+  justify-content: center !important;
 }
 
 .encabezado__imagenes {
@@ -83,16 +124,20 @@
     flex-direction: column-reverse;
     } 
 
-  .nano__suscribir-formulario {
-    width: 50%;
-    flex-direction: column;
-    align-items: center;
-    }
-
   .nano__suscribir {
     width: 100%;
     margin-left: 0%;
     padding-top: 2%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    }
+
+  .nano__suscribir-formulario {
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
     }
 
   .nano__suscribir-input {
@@ -126,24 +171,25 @@
     width: 100%;
     margin-left: 0%;
     padding-top: 2%;
-    offset:unset ;      
-    flex-direction: column-reverse;
+    offset:unset;      
+    flex-direction: column;
+    text-align: center;
     }
 
   .nano__suscribir-formulario {
-    width: 50%;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     }
 
   .nano__suscribir-input {
       width: 50%;
-      text-align: center;
-      align-items: center;
+      justify-content: center;
     }
 
   .nano__suscribir-boton {
     width: 50%;
+    justify-content: center;
     }
 
   .enviar__consultas {
