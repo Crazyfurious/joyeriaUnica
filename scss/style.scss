@@ -71,22 +71,22 @@
     top: 105%;
 
     li {
-        background-color:black;
+        background-color:$primary;
     }
 }
 
 .btn-floating {
-  background-color: black;
-  color: #FFCC33;
+  background-color: $primary;
+  color: $col_yellow;
   top: 105%;
 }
 
 .card {
-  background-color: transparent;
+  // background-color: transparent;
 }
 
 .card-body {
-  background-color: white;
+  background-color: $secondary;
 }
 
 .carousel-fondo {
@@ -257,7 +257,7 @@ border-color: #e5e5e5;
 max-width: 1400px;
 
 &__blanco {
-  color: white;
+  color: $secondary;
 }
 
 &__subtitulo {
@@ -281,8 +281,85 @@ max-width: 1400px;
   max-width: 1400px;
 }
 
-.fotos {
-  align-items: center;
-  justify-content: center;
+.qrcode {
+
+  width: 80px;
+  height: 80px;
+
+}
+
+.principal {
+
+  height: 50rem;
   margin: 0 auto;
+
+  &__uno {
+    background-image: url('../images/productos/index/slide_1_1.jpg');
+    background-size: cover;
+    }
+
+  &__dos {
+    background-image: url('../images/productos/index/slide_1_2.jpg');
+    background-size: cover;
+    }
+
+  &__tres {
+  background-image: url('../images/productos/index/slide_1_3.jpg');
+  background-size: cover;
+  }
+
+  &__cuatro {
+    background-image: url('../images/productos/index/slide_2_1.jpg');
+    background-size: cover;
+    }
+
+  &__cinco {
+    background-image: url('../images/productos/index/slide_2_2.jpg');
+    background-size: cover;
+    }
+  
+  &__qrcode {
+    background-color: #a38b8b;
+  }
+
+  &__whatsapp {
+    background-color: #F0E4E4;
+    height: 180px;
+  }
+}
+
+.parrafosPie {
+  color: $primary;
+}
+
+.enlacesPie {
+  text-decoration: none;
+}
+
+.textoDecorativo {
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: 700;
+}
+
+.linea {
+  margin: 0;
+  border: 1px solid $primary;
+}
+
+.contactoImagen {
+  width: 100%;
+  height: 100%;
+}
+
+.novedades {
+  // background-image: url('../images/web/novedades.jpg');
+  background-color: #F0E4E4;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+
+  &__texto {
+    font-size: 150px;
+    text-shadow: 2px 2px #a38b8b;
+  }
 }

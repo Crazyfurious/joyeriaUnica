@@ -2,31 +2,31 @@ body {
   background-image: url(../images/fondos/body_backup_Tres.png);
   background-position: 0 0;
   background-repeat: repeat;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $fon_first
 
   &::-webkit-scrollbar {
     width: 12px;
     }
     
   &::-webkit-scrollbar-track {
-    background: #eaeaea;
+    background: $col_$secondary;
     }
 
   &::-webkit-scrollbar-thumb {
-    background-color: #e23487;
+    background-color: $success;
     border-radius: 20px;
-    border: 5px solid #eaeaea;
+    border: 5px solid $col_$secondary;
     }
 }
   
 header {
-    background: linear-gradient(75deg,#eaeaea 15%, #eaeaea 50%, #eaeaea 85%);
+    background: linear-gradient(75deg,$col_$secondary 15%, $col_$secondary 50%, $col_$secondary 85%);
   }
 
 a {
   text-decoration: none;
   font-family: /*'Merriweather', serif;*/ 'Fira Sans', sans-serif;   
-  color: black;
+  color: $primary;
   transition: color 0.2s ease-in-out 0s;
 
   &:visited {
@@ -34,7 +34,7 @@ a {
   }
   
   &:hover, &:focus {
-    color: #e23487;
+    color: $success;
   }
 
 }
@@ -63,12 +63,12 @@ section {
 
 ::-moz-selection { /* Code for Firefox */
   
-    background: #FFCC33;
-    color: black;
+    background: $col_yellow;
+    color: $primary;
 }
   
 ::selection {
-    background: #FFCC33;  
+    background: $col_yellow;  
     /* background: #e7c4e4;*/
     color: #00061b;
 }
@@ -93,7 +93,7 @@ section {
   max-width: 1050px;
 
   &__seccion-uno {
-    background-color: white;
+    background-color: $secondary;
     padding-top: 0px; 
     padding-bottom: 0px; 
     background-attachment: fixed; 
@@ -114,12 +114,12 @@ section {
     background-position: center center;
 
     h3 {
-      color: white;
+      color: $secondary;
       font-size: 32px;
       }
 
     div {
-      color: white;
+      color: $secondary;
       font-weight: 600;;
       }
     
@@ -129,7 +129,7 @@ section {
     }
 
   &__seccion-tres {
-    background-color: white;
+    background-color: $secondary;
     padding-top: 0px; 
     padding-bottom: 0px; 
     background-attachment: fixed; 
@@ -153,7 +153,7 @@ section {
     }
 
   &__seccion-cinco {
-    background-color: white;
+    background-color: $secondary;
     padding-top: 0px; 
     padding-bottom: 0px; 
     background-attachment: fixed; 
