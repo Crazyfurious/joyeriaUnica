@@ -1,6 +1,7 @@
+@import "mixins";
 @import "variables";
 @import "efectos";
-@import "htmlsem";
+@import "globals";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 .piePagina {
@@ -122,7 +123,7 @@
     text-align: center;
     align-items: center;
     flex-direction: column-reverse;
-    } 
+  } 
 
   .nano__suscribir {
     width: 100%;
@@ -132,30 +133,29 @@
     align-items: center;
     text-align: center;
     flex-direction: column;
-    }
+  }
 
   .nano__suscribir-formulario {
     width: 50%;
     flex-direction: column;
     align-items: center;
-    }
+  }
 
   .nano__suscribir-input {
       width: 50%;
       text-align: center;
       align-items: center;
-    }
+  }
     
   .nano__suscribir-boton {
       width: 50%;
       text-align: center;
       align-items: center;
-    }
+  }
 
   .enviar__consultas {
       margin-bottom: 15px;
-    }
-
+  }
 }
 
 @media (min-width: 577px) and (max-width: 992px) {
@@ -165,7 +165,7 @@
     margin-left: 3%;
     text-align: center;
     align-items: center;
-    }
+  }
 
   .nano__suscribir {
     width: 100%;
@@ -174,28 +174,27 @@
     offset:unset;      
     flex-direction: column;
     text-align: center;
-    }
+  }
 
   .nano__suscribir-formulario {
     width: 100%;
     flex-direction: column;
     align-items: center;
-    }
+  }
 
   .nano__suscribir-input {
       width: 50%;
       justify-content: center;
-    }
+  }
 
   .nano__suscribir-boton {
     width: 50%;
     justify-content: center;
-    }
+  }
 
   .enviar__consultas {
     margin-bottom: 15px;
   }
-
 }
 
 @media (min-width: 768px) {
@@ -212,7 +211,7 @@
 
 }
 
-@media (min-width: 1044px){
+@media (min-width: 1044px) {
   .navbar-expand-custom {
       flex-direction: row;
       flex-wrap: nowrap;
@@ -238,500 +237,52 @@
   .navbar-expand-custom .navbar-toggler {
       display: none;
   }
+}
+
+.servicios {
+
+line-height: 1.7;
+-webkit-text-size-adjust: 100%;
+-webkit-font-smoothing: antialiased;
+font-family: "Open Sans";
+color: #545454;
+border: 0;
+outline: 0;
+font-size: 100%;
+background: transparent;
+margin: 0;
+padding: 0;
+display: block;
+border-color: #e5e5e5;
+max-width: 1400px;
+
+&__blanco {
+  color: white;
+}
+
+&__subtitulo {
+  font-size: 22px;
+}
+
+&__parrafo {
+  margin-top:15px;
+}
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*@media only screen and (min-width: 0px) and (max-width: 576px) {
-  .nano {
-    width: 100%;
-    margin: 15px auto;
-    text-align: center;
-    align-items: center;
-    flex-direction: column-reverse;
-    } 
-
-  .nano__suscribir-formulario {
-    width: 50%;
-    flex-direction: column;
-    align-items: center;
-    }
-
-  .nano__suscribir {
-    width: 100%;
-    margin-left: 0%;
-    padding-top: 2%;
-    }
-
-  .nano__suscribir-input {
-      width: 50%;
-      text-align: center;
-      align-items: center;
-    }
-    
-  .nano__suscribir-boton {
-      width: 50%;
-      text-align: center;
-      align-items: center;
-    }
-
-  .enviar__consultas {
-      margin-bottom: 15px;
-    }
-
-}
-
-@media only screen and (min-width: 577px) and (max-width: 992px) {
-  
-  .nano {
-    width: 30%;
-    margin-left: 3%;
-    text-align: center;
-    align-items: center;
-    }
-
-  .nano__suscribir {
-    width: 100%;
-    margin-left: 0%;
-    padding-top: 2%;
-    offset:unset ;      
-    flex-direction: column-reverse;
-    }
-
-  .nano__suscribir-formulario {
-    width: 50%;
-    flex-direction: column;
-    align-items: center;
-    }
-
-  .nano__suscribir-input {
-      width: 50%;
-      text-align: center;
-      align-items: center;
-    }
-
-  .nano__suscribir-boton {
-    width: 50%;
-    }
-
-  .enviar__consultas {
-    margin-bottom: 15px;
-  }
-
-}
-
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1043px) {
-  
-  .enviar__consultas {
-    margin-bottom: 15px;
-  }
-
-}
-
-@media (min-width: 1044px){
-  .navbar-expand-custom {
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: flex-start;
-  }
-  .navbar-expand-custom .navbar-nav {
-      flex-direction: row;
-  }
-  .navbar-expand-custom .dropdown-menu {
-      position: absolute;
-  }
-  .navbar-expand-custom .nav-link {
-      padding-right: .5rem;
-      padding-left: .5rem;
-  }
-  .navbar-expand-custom > .container {
-      flex-wrap: nowrap;
-  }
-  .navbar-expand-custom .navbar-collapse {
-      display: flex!important;
-      flex-basis: auto;
-  }
-  .navbar-expand-custom .navbar-toggler {
-      display: none;
-  }
-
-} */
-
-::-moz-selection { /* Code for Firefox */
-  
-      background: #FFCC33;
-      color: black;
-  }
-    
-  ::selection {
-      background: #FFCC33;  
-      /* background: #e7c4e4;*/
-      color: #00061b;
-  }
-
-
-
-
-
-
-
-
-
-  
-  /*OPCIONES PRINCIPALES */
-  /* -------------------------------------------------------------------------------------
-  *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-  }
-  
-  :root {
-      --paddingsecciones: 30px 0;
-  }
-  
-  ------------------------------------------------------------------------------ */
-  
-  
-  /* -------------------------------------------------------------------------------
-  
-  html, body {
-    height: 100%;
-  }
-  
-  body::-webkit-scrollbar {
-    width: 12px;
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: #eaeaea;
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: #e23487;
-    border-radius: 20px;
-    border: 5px solid #eaeaea;
-  }
-  -------------------------------------------------------------------------------------*/
-  
-  
-  
-  /* -------------------------------------------------------------------------------------
-  
-  div {
-    text-align: justify;
-  }
-  
-  --------------------------------------------------------------------------------------- */
-  
-  /* -------------------------------------------------------------------------------------
-  
-
-  
-  --------------------------------------------------------------------------------------- */
-  
-  /* CLASES DEL HEADER */
-  
-  /* -------------------------------------------------------------------------------------
-  
-  .contenedor {
-      width: 100%;
-      max-width: 1200px;
-      min-width: 50px;
-      margin: 0 auto;
-      overflow: hidden;
-      padding: var(--paddingsecciones);    
-  }
-  
-  .contenedor--article {
-    display: flex;
-  }
-  
-  .encabezado {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-  ------------------------------------------ */
-  
-  
-  /* ----------------------------------------------------------
-  
-  .encabezado__logo {
-      height: 50px;
-      margin: 0 40px 0 0;
-      flex: 4 1 auto;
-  }
-  
-  .encabezado__cesta {
-      height: 35px;
-      margin: 0 0 0 30px;    
-      flex: 1 1 auto;
-  }
-  
-  .encabezado__cesta:hover {
-    transform: scale(1.5);
-    transition-property: all;
-    transition-duration: 0.18s;
-    transition-timing-function: ease-in;
-  }
-  
-  .encabezado__usuario {
-      height: 35px;
-      margin: 0 0 0 30px;
-      flex: 1 1 auto;
-  }
-  
-  .encabezado__usuario:hover {
-    transform: rotateY(180deg);
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in;
-  }
-  
-  ------------------------------------------------------------------------------------- */
-  
-  /* ----------------- PARA BARRA DE NAVEGACION */
-  
-  /* -------------------------------------------------------------------------------------
-  
-  .nav {
-    height: 40px;
-  }
-  
-  .nav__lista {
-    display: flex;
-    justify-content: center;
-    vertical-align: middle;
-    font-size: 1.2em;
-  }
-  
-  .nav__elementos {
-    cursor: pointer;
-    list-style: none;
-    padding: 0 1rem 0 0;
-    font-size: 1.2em;
-  }
-  
-  /* Tuve muchos problemas para alinear los iconos con el texto, 
-  al final tuve que asignar el vertical-align, más el padding, más
-  jugar con el tamaño de las imágenes para que se representará bien */
-  
-  /* -------------------------------------------------------------------------------------
-  
-  .nav__elementos img { 
-    width: 36px;
-    height: 48px;
-    margin: 0rem 0.5rem 0 0;
-    vertical-align: middle;
-    padding: 0 0 10px 0;
-  }
-  
-    /* TITULO ENCABEZADO ANIMADO 
-    Probando el cambio de colores */
-  
-  /* -------------------------------------------------------------------------------------
-  
-  .encabezado__titulo--H1 {
-    letter-spacing: 0;
-    font-size: 3em;
-    padding: .25em 0 .325em;
-    display: block;
-    margin: 0 auto;
-    text-shadow: 0 0 80px rgba(255,255,255,.5);
-    background: url(/images/header/animatedBar.png) repeat-y;
-    -webkit-background-clip: text;
-    background-clip: text;
-  
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: aitf 80s linear infinite;
-  
-    -webkit-transform: translate3d(0,0,0);
-    -webkit-backface-visibility: hidden;
-  }
-  
-  @-webkit-keyframes aitf {
-      0% { background-position: 0% 50%; }
-      100% { background-position: 100% 50%; }
-  }
-  
-  /* ------------------------- SECCION PRINCIPAL ---------- */
-  /* Creamos el slider para las imágenes centrales y texto */
-  
-  /* -------------------------------------------------------------------------------------
-  
-  .seccion__slider {
-  display: grid;
-  grid-template-columns: 1fr 0.6fr;
+.circulos {
+  font-size: 60px;
+  top: -5px;
+  position: relative;
   align-items: center;
-  justify-items: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  max-width: 1200px;
-  max-height: 600px;
-  width: 100vw;
-  height: 45vw;
-  box-shadow: 0 0 16px rgba(0, 0, 0, .25);
-  padding: 1em;
-  box-sizing: border-box;
-  border: 3px solid;
-  border-image-slice: 1;
-  border-image-source: linear-gradient(to right, #743ad5, #d53a9d, #eaeaea);
-  /* Configuración de Firefox para la barra de scroll */
-  
-  /* -------------------------------------------------------------------------------------
-  
-  scrollbar-width: thin;
-  scrollbar-color: #e23487 #eaeaea;
-  }
-  
-  /* Configuración de Chrome, Edge, etc.. para la barra de scroll */
-  
-  /* -------------------------------------------------------------------------------------
-  
-  .seccion__slider::-webkit-scrollbar {
-    width: 12px;
-  }
-  
-  .seccion__slider::-webkit-scrollbar-track {
-    background: #eaeaea;
-  }
-  
-  .seccion__slider::-webkit-scrollbar-thumb {
-    background-color: #e23487;
-    border-radius: 20px;
-    border: 5px solid #eaeaea;
-  }
-  
-  /* Continuamos con el slider, después de configurar la barra de scroll */
-  
-  /* -------------------------------------------------------------------------------------
-  
-  .seccion__slider img {
-    width: 792px;
-    object-fit: cover;
-    scroll-snap-align: center;
-  }
-  
-  .seccion__slider-texto {
-    width: 275px;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-  }
-  
-  .seccion__slider-texto-margen {
-    margin-top: 30px;
-  }
-  
-  .seccion__slider-texto-titulo {
-    text-align: center;
-    font-size: 1.8em;
-  }
-  
-  /* Creación del botón de comprar y su animación */
-  
-  /* -------------------------------------------------------------------------------------
- 
-  .seccion__slider--comprar {
-    height: 40px;
-    margin: 0 auto;
-    position: relative;
-    top: 50%;
-    left: 1%;
-    transform: translateY(-50%);
-    width: 320px;
-    /*margin-top: 20px;
-  }
+}
 
-  .seccion__slider--comprar-linea {
-    fill: transparent;
-    stroke-dasharray: 140 540;
-    stroke-dashoffset: -474;
-    stroke-width: 180px;
-    stroke: #e3d248;
-  }
-  
-  .seccion__slider--comprar-texto {
-    color: #000;
-    font-size: 21px;
-    letter-spacing: 4px;
-    text-align: center;
-    line-height: 32px;
-    position: relative;
-    top: 0px;
-  }
-  
-  .seccion__slider--comprar-tamano {
-    height: 20px;
-    width: 150px;
-  }
-  
-  @keyframes draw {
-    0% {
-      stroke-dasharray: 40 40;
-      stroke-dashoffset: 74;
-      stroke-width: 8px;
-    }
-    100% {
-      stroke-dasharray: 760;
-      stroke-dashoffset: 0;
-      stroke-width: 5px;
-    }
-  }
-  
-  .seccion__slider--comprar a:hover {
-    text-decoration: none;
-    transition-property: all;
-    transition-duration: 0.18s;
-    transition-timing-function: ease-in;
-  }
-  
-  .seccion__slider--comprar:hover .seccion__slider--comprar-linea {
-    -webkit-animation: 0.5s draw linear forwards;
-    animation: 0.5s draw linear forwards;
-  } */
+.imagen {
+  max-width: 1400px;
+}
+
+.fotos {
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}

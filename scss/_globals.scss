@@ -1,0 +1,175 @@
+body {
+  background-image: url(../images/fondos/body_backup_Tres.png);
+  background-position: 0 0;
+  background-repeat: repeat;
+  font-family: 'Montserrat', sans-serif;
+
+  &::-webkit-scrollbar {
+    width: 12px;
+    }
+    
+  &::-webkit-scrollbar-track {
+    background: #eaeaea;
+    }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #e23487;
+    border-radius: 20px;
+    border: 5px solid #eaeaea;
+    }
+}
+  
+header {
+    background: linear-gradient(75deg,#eaeaea 15%, #eaeaea 50%, #eaeaea 85%);
+  }
+
+a {
+  text-decoration: none;
+  font-family: /*'Merriweather', serif;*/ 'Fira Sans', sans-serif;   
+  color: black;
+  transition: color 0.2s ease-in-out 0s;
+
+  &:visited {
+    color:rgb(63, 63, 63);
+  }
+  
+  &:hover, &:focus {
+    color: #e23487;
+  }
+
+}
+       
+h1 {
+      font-family: 'Fira Sans', sans-serif;
+      font-size: 2em;
+      text-align: center;
+      line-height: normal;
+  }
+  
+h3 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.5em;
+  }
+  
+h5 {
+    font-family: 'Fira Sans', sans-serif;
+    display: inline;
+    font-size: 1em;
+    }
+
+section {
+    padding:100px 0px;
+  }
+
+::-moz-selection { /* Code for Firefox */
+  
+    background: #FFCC33;
+    color: black;
+}
+  
+::selection {
+    background: #FFCC33;  
+    /* background: #e7c4e4;*/
+    color: #00061b;
+}
+
+.nospaces {
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.hero {
+  background-image: url('/images/header/servicios.webp');
+  height: 20rem;
+  background-size: cover;
+  background-position: center center;
+}
+
+.servicios {
+
+  align-items: center;
+  text-align: center;;
+  margin: 0 auto;
+  max-width: 1050px;
+
+  &__seccion-uno {
+    background-color: white;
+    padding-top: 0px; 
+    padding-bottom: 0px; 
+    background-attachment: fixed; 
+    background-position: center center;
+
+    section {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin: mx-auto; 
+      }
+    }
+
+  &__seccion-dos {
+    background-image: url('../images/productos/services/seccionTwo.jpg'); 
+    padding-top: 0px; 
+    padding-bottom: 0px; 
+    background-attachment: fixed; 
+    background-position: center center;
+
+    h3 {
+      color: white;
+      font-size: 32px;
+      }
+
+    div {
+      color: white;
+      font-weight: 600;;
+      }
+    
+    ul {
+      letter-spacing: 1;
+    }
+    }
+
+  &__seccion-tres {
+    background-color: white;
+    padding-top: 0px; 
+    padding-bottom: 0px; 
+    background-attachment: fixed; 
+    background-position: center center;
+
+    section {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin: mx-auto; 
+      }
+    }
+
+  &__seccion-cuatro {
+    background-image: url('../images/productos/services/seccionFour.jpg'); 
+    padding-top: 0px; 
+    padding-bottom: 0px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    }
+
+  &__seccion-cinco {
+    background-color: white;
+    padding-top: 0px; 
+    padding-bottom: 0px; 
+    background-attachment: fixed; 
+    background-position: center center;
+    }
+
+  &__seccion-seis {
+    background-image: url('../images/productos/services/seccionSix.jpg'); 
+    padding-top: 100px; 
+    padding-bottom: 80px;
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center center;
+    }
+}
+
+.logo {
+  font-size: 1.2rem;
+}
