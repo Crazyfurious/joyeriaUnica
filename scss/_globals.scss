@@ -2,25 +2,25 @@ body {
   background-image: url(../images/fondos/body_backup_Tres.png);
   background-position: 0 0;
   background-repeat: repeat;
-  font-family: $fon_first
+  font-family: $fon_first;
 
   &::-webkit-scrollbar {
     width: 12px;
     }
     
   &::-webkit-scrollbar-track {
-    background: $col_$secondary;
+    background: $secondary;
     }
 
   &::-webkit-scrollbar-thumb {
     background-color: $success;
     border-radius: 20px;
-    border: 5px solid $col_$secondary;
+    border: 5px solid $secondary;
     }
 }
   
 header {
-    background: linear-gradient(75deg,$col_$secondary 15%, $col_$secondary 50%, $col_$secondary 85%);
+    background: linear-gradient(75deg,$secondary 15%, $secondary 50%, $secondary 85%);
   }
 
 a {
