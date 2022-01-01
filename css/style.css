@@ -11058,23 +11058,38 @@ textarea.form-control-lg {
   margin: 0 auto;
 }
 .principal__uno {
-  background-image: url("../images/productos/index/slide_1_1.jpg");
+  background: url("../images/productos/index/slide_1_1.jpg") no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 .principal__dos {
-  background-image: url("../images/productos/index/slide_1_2.jpg");
+  background: no-repeat top center url("../images/productos/index/slide_1_2.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 .principal__tres {
-  background-image: url("../images/productos/index/slide_1_3.jpg");
+  background: no-repeat top center url("../images/productos/index/slide_1_3.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 .principal__cuatro {
-  background-image: url("../images/productos/index/slide_2_1.jpg");
+  background: transparent no-repeat top center url("../images/productos/index/slide_2_1.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 .principal__cinco {
-  background-image: url("../images/productos/index/slide_2_2.jpg");
+  background: transparent no-repeat top center url("../images/productos/index/slide_2_2.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 .principal__qrcode {
